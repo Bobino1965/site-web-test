@@ -1,17 +1,81 @@
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Proposition — Parcours Pickleball</title>
-  <style>
-    :root{--navy:#10242f;--cream:#fff9eb;--lime:#dcff57;--coral:#ff654f;--line:rgba(16,36,47,.18)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--navy);font-family:Arial,sans-serif}.top{display:flex;justify-content:space-between;align-items:center;padding:20px 5vw;border-bottom:1px solid var(--line);font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.12em}.brand{font-weight:900}.hero{min-height:76vh;padding:7vw 5vw 5vw;display:grid;grid-template-columns:1.3fr .7fr;gap:5vw;align-items:end;position:relative;overflow:hidden}.pill{display:inline-block;background:var(--lime);color:var(--navy);padding:10px 16px;border-radius:999px;font-weight:800;transform:rotate(-2deg)}h1{font-size:clamp(34px,5.5vw,75px);line-height:1.02;letter-spacing:-.065em;margin:32px 0 26px;text-transform:uppercase}.lead{font-size:clamp(19px,2vw,27px);line-height:1.35;max-width:720px}.ball{width:min(330px,34vw);aspect-ratio:1;border-radius:50%;background:var(--coral);position:relative;box-shadow:20px 24px 0 var(--navy);transform:rotate(9deg)}.ball:before{content:"";position:absolute;inset:15%;background:radial-gradient(circle,#10242f 0 4px,transparent 5px);background-size:35px 35px}.section{padding:80px 5vw;border-top:1px solid var(--line)}.section h2{font-size:clamp(38px,6vw,75px);letter-spacing:-.055em;line-height:.95;margin:0 0 42px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{border:2px solid var(--navy);border-radius:22px;padding:25px;min-height:230px;background:white}.card:nth-child(2){background:var(--lime);transform:rotate(1deg)}.card .n{font-size:13px;font-weight:900}.card h3{font-size:25px;margin:35px 0 12px}.card p{line-height:1.55}.plan{display:grid;grid-template-columns:.7fr 1.3fr;gap:6vw}.plan ol{list-style:none;margin:0;padding:0;counter-reset:s}.plan li{counter-increment:s;padding:22px 0;border-bottom:1px solid var(--line);font-size:20px}.plan li:before{content:"0" counter(s);font-weight:900;color:var(--coral);margin-right:25px}.offer{background:var(--navy);color:white;border-radius:35px;padding:clamp(28px,5vw,65px);display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end}.price{font-size:clamp(55px,8vw,100px);font-weight:900;letter-spacing:-.06em}.muted{opacity:.7}.button{display:inline-block;background:var(--lime);color:var(--navy);padding:18px 24px;border-radius:999px;text-decoration:none;font-weight:900;margin-top:20px}footer{padding:30px 5vw;font-size:12px;display:flex;justify-content:space-between}@media(max-width:760px){.hero,.plan,.offer{grid-template-columns:1fr}.hero{min-height:auto}.ball{width:190px}.grid3{grid-template-columns:1fr}.card:nth-child(2){transform:none}h1{font-size:36px}}
-  </style>
-</head>
-<body>
-  <nav class="top"><span class="brand">Court & Co.</span><span>Prototype 01 · Pickleball</span></nav>
-  <header class="hero"><div><span class="pill">Par Stéphane · proposition préparée le 24 août 2026</span><h1>Plus de<br>contrôle.<br>Plus de fun.</h1><p class="lead">Un parcours de 6 semaines pour bâtir des bases solides, prendre confiance au filet et jouer plus stratégiquement — sans transformer votre loisir en corvée.</p></div><div class="ball" aria-hidden="true"></div></header>
-  <section class="section"><h2>À la fin, vous saurez…</h2><div class="grid3"><article class="card"><span class="n">01</span><h3>Servir avec intention</h3><p>Une routine simple et répétable pour engager l’échange avec profondeur et régularité.</p></article><article class="card"><span class="n">02</span><h3>Gagner la cuisine</h3><p>Avancer au bon moment, contrôler les dinks et cesser d’offrir des points gratuits.</p></article><article class="card"><span class="n">03</span><h3>Lire le jeu</h3><p>Choisir le coup utile, vous replacer vite et construire le point avec votre partenaire.</p></article></div></section>
-  <section class="section plan"><div><span class="pill">Le parcours</span><h2>6 semaines.<br>Un vrai déclic.</h2><p>Petit groupe, beaucoup de balles touchées et un conseil précis à appliquer entre chaque séance.</p></div><ol><li>Diagnostic ludique & objectifs</li><li>Service, retour et troisième coup</li><li>Transition vers la zone de non-volée</li><li>Dinks, volées et contrôle du rythme</li><li>Placement, communication et stratégie</li><li>Match dirigé & plan de progression</li></ol></section>
-  <section class="section"><div class="offer"><div><span class="pill">Cohorte automne · 6 places</span><h2 style="margin-top:35px">Prêt à jouer<br>le point suivant?</h2><p class="muted">6 séances de 75 minutes · terrain et balles inclus · fiche pratique après chaque séance · bilan individuel final.</p><a class="button" href="mailto:coach@exemple.ca">Réserver un appel de 15 min →</a></div><div><div class="price">200 $</div><div class="muted">+ taxes · par joueur</div></div></div></section>
-  <footer><span>COURT & CO. · FORMATION HYPOTHÉTIQUE</span><span>Valide 14 jours</span></footer>
-</body></html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Proposition — Parcours Pickleball</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="top">
+      <span class="brand">Court & Co.</span>
+      <span>Prototype 01 · Pickleball</span>
+    </nav>
+
+    <header class="hero">
+      <div>
+        <span class="pill">Par Stéphane · proposition préparée le 24 août 2026</span>
+        <h1>Plus de<br>contrôle.<br>Plus de fun.</h1>
+        <p class="lead">Un parcours de 6 semaines pour bâtir des bases solides, prendre confiance au filet et jouer plus stratégiquement — sans transformer votre loisir en corvée.</p>
+      </div>
+      <div class="ball" aria-hidden="true"></div>
+    </header>
+
+    <section class="section">
+      <h2>À la fin, vous saurez…</h2>
+      <div class="grid3">
+        <article class="card">
+          <span class="n">01</span>
+          <h3>Servir avec intention</h3>
+          <p>Une routine simple et répétable pour engager l’échange avec profondeur et régularité.</p>
+        </article>
+        <article class="card">
+          <span class="n">02</span>
+          <h3>Gagner la cuisine</h3>
+          <p>Avancer au bon moment, contrôler les dinks et cesser d’offrir des points gratuits.</p>
+        </article>
+        <article class="card">
+          <span class="n">03</span>
+          <h3>Lire le jeu</h3>
+          <p>Choisir le coup utile, vous replacer vite et construire le point avec votre partenaire.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section plan">
+      <div>
+        <span class="pill">Le parcours</span>
+        <h2>6 semaines.<br>Un vrai déclic.</h2>
+        <p>Petit groupe, beaucoup de balles touchées et un conseil précis à appliquer entre chaque séance.</p>
+      </div>
+      <ol>
+        <li>Diagnostic ludique & objectifs</li>
+        <li>Service, retour et troisième coup</li>
+        <li>Transition vers la zone de non-volée</li>
+        <li>Dinks, volées et contrôle du rythme</li>
+        <li>Placement, communication et stratégie</li>
+        <li>Match dirigé & plan de progression</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <div class="offer">
+        <div>
+          <span class="pill">Cohorte automne · 6 places</span>
+          <h2>Prêt à jouer<br>le point suivant?</h2>
+          <p class="muted">6 séances de 75 minutes · terrain et balles inclus · fiche pratique après chaque séance · bilan individuel final.</p>
+          <a class="button" href="mailto:coach@exemple.ca">Réserver un appel de 15 min →</a>
+        </div>
+        <div>
+          <div class="price">200 $</div>
+          <div class="muted">+ taxes · par joueur</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>COURT & CO. · FORMATION HYPOTHÉTIQUE</span>
+      <span>Valide 14 jours</span>
+    </footer>
+  </body>
+</html>
