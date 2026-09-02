@@ -235,3 +235,97 @@ button:focus-visible {
     width: 100%;
   }
 }
+
+/* Ajustements compacts pour les téléphones. */
+@media (max-width: 431px) {
+  body {
+    font-size: 0.925rem;
+    line-height: 1.45;
+  }
+
+  .accueil {
+    padding: 0.75rem;
+  }
+
+  .hero {
+    gap: 0.85rem;
+    padding-block: 0.5rem 0.9rem;
+  }
+
+  h1 {
+    font-size: clamp(1.75rem, 8vw, 2.1rem);
+    line-height: 1.05;
+  }
+
+  .etiquette {
+    margin-bottom: 0.45rem;
+    font-size: 0.75rem;
+  }
+
+  .sous-titre {
+    margin-block: 0.6rem;
+    font-size: 1rem;
+  }
+
+  .introduction {
+    font-size: 0.925rem;
+    line-height: 1.45;
+  }
+
+  .image-hero {
+    height: clamp(150px, 45vw, 190px);
+    aspect-ratio: auto;
+  }
+
+  .navigation {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.45rem;
+    margin-block: 0.75rem 1.25rem;
+  }
+
+  .navigation a {
+    min-height: 52px;
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .generateur {
+    margin-top: 0.75rem;
+    padding: 0.85rem;
+    font-size: 0.95rem;
+  }
+
+  .generateur h2 {
+    margin-bottom: 0.35rem;
+    font-size: 1.35rem;
+  }
+
+  .generateur > p:not(.etiquette):not(.excuse) {
+    margin-block: 0.4rem;
+  }
+
+  .boutons {
+    gap: 0.4rem;
+    margin-block: 0.7rem;
+  }
+
+  button {
+    padding: 0.5rem 0.6rem;
+  }
+
+  .excuse {
+    min-height: 0;
+    padding: 0.6rem;
+  }
+
+  .version-site {
+    margin-top: 1.2rem;
+    padding-top: 0.7rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .navigation {
+    grid-template-columns: 1fr;
+  }
+}
