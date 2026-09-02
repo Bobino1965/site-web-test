@@ -164,6 +164,15 @@ button:focus-visible {
   font-weight: 700;
 }
 
+.version-site {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--couleur-bordure);
+  color: var(--couleur-accent);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .accueil {
     padding: 1.5rem;
