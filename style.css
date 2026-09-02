@@ -12,6 +12,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background: var(--couleur-fond);
   color: var(--couleur-texte);
   font-family: Arial, Helvetica, sans-serif;
@@ -32,6 +33,10 @@ body {
   gap: clamp(1.5rem, 5vw, 4rem);
   align-items: center;
   padding-block: clamp(1.5rem, 5vw, 3.5rem);
+}
+
+.contenu {
+  min-width: 0;
 }
 
 .etiquette {
@@ -130,6 +135,7 @@ h1 {
 }
 
 button {
+  min-height: 44px;
   padding: 0.56rem 0.7rem;
   border: 2px solid var(--couleur-accent);
   border-radius: 0.5rem;
@@ -158,41 +164,65 @@ button:focus-visible {
   font-weight: 700;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .accueil {
-    padding-block: 1.5rem 3rem;
+    padding: 1.5rem;
   }
 
-  .hero,
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding-block: 1rem 1.5rem;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 9vw, 3.25rem);
+  }
+
+  .etiquette {
+    margin-bottom: 0.65rem;
+  }
+
+  .sous-titre {
+    margin-block: 0.85rem;
+  }
+
+  .image-hero {
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+
+  .navigation {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.6rem;
+    margin-block: 1rem 2rem;
+  }
+
+  .navigation a {
+    min-height: 64px;
+    padding: 0.85rem;
+  }
+
+  .generateur {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .accueil {
+    padding: 1.1rem;
+  }
+
   .navigation {
     grid-template-columns: 1fr;
   }
 
-  .image-attente {
-    min-height: 190px;
-  }
-
-  .navigation {
-    gap: 0.6rem;
-    margin-bottom: 2.5rem;
+  .navigation a {
+    min-height: 56px;
   }
 
   .boutons,
   button {
     width: 100%;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 760px) {
-  .hero {
-    grid-template-columns: 1fr;
-  }
-
-  .image-attente {
-    min-height: 220px;
-  }
-
-  .navigation {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
