@@ -6,6 +6,11 @@
   --largeur-page: 1040px;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -253,7 +258,7 @@ button:focus-visible {
   }
 
   h1 {
-    font-size: clamp(1.75rem, 8vw, 2.1rem);
+    font-size: 1.625rem;
     line-height: 1.05;
   }
 
@@ -264,16 +269,16 @@ button:focus-visible {
 
   .sous-titre {
     margin-block: 0.6rem;
-    font-size: 1rem;
+    font-size: 0.9375rem;
   }
 
   .introduction {
-    font-size: 0.925rem;
-    line-height: 1.45;
+    font-size: 0.875rem;
+    line-height: 1.4;
   }
 
   .image-hero {
-    height: clamp(150px, 45vw, 190px);
+    height: clamp(140px, 42vw, 165px);
     aspect-ratio: auto;
   }
 
@@ -284,29 +289,29 @@ button:focus-visible {
   }
 
   .navigation a {
-    min-height: 52px;
+    min-height: 48px;
     padding: 0.6rem;
     font-size: 0.85rem;
   }
 
   .generateur {
-    margin-top: 0.75rem;
-    padding: 0.85rem;
+    margin-top: 0.6rem;
+    padding: 0.7rem;
     font-size: 0.95rem;
   }
 
   .generateur h2 {
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.25rem;
     font-size: 1.35rem;
   }
 
   .generateur > p:not(.etiquette):not(.excuse) {
-    margin-block: 0.4rem;
+    margin-block: 0.3rem;
   }
 
   .boutons {
-    gap: 0.4rem;
-    margin-block: 0.7rem;
+    gap: 0.3rem;
+    margin-block: 0.55rem;
   }
 
   button {
@@ -315,7 +320,7 @@ button:focus-visible {
 
   .excuse {
     min-height: 0;
-    padding: 0.6rem;
+    padding: 0.5rem;
   }
 
   .version-site {
@@ -324,7 +329,7 @@ button:focus-visible {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 359px) {
   .navigation {
     grid-template-columns: 1fr;
   }
